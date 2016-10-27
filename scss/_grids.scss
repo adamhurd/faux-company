@@ -1,0 +1,45 @@
+//Susy Setup --------------------------------
+$total-columns :12;
+$column-width  :4em;
+$gutter-width  :1em;
+$grid-padding  : $gutter-width;
+
+@include border-box-sizing;
+
+$small: 1px 480px;
+$medium: 481px 768px;
+$large: 769px 960px;
+
+//Content ------------------------------------------------------
+.layout {
+	@include container;
+	padding: 3%;
+}
+
+.primary {
+	margin-top: .2em;
+	@include at-breakpoint($medium) {
+		@include span-columns(8,12);
+	}//medium layour
+}//primary
+
+//Content Layout ----------------------------------------------------
+
+
+// $susy: (
+// 	columns: 12,
+// 	gutters: 1/4,
+// 	);
+
+// @include border-box-sizing;
+
+// .container {
+// 	@include container;
+// 	width: 960px;
+// }
+
+// $small: 1px 480px;
+// $medium: 481px 768px;
+// $large: 769px 960px;
+
+

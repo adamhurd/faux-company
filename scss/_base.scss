@@ -5,20 +5,80 @@
 @import url('https://use.fontawesome.com/74b492a4aa.js');
 
 body {
+	font-family: $font-primary;
+	font-size: 1.2rem;
+	line-height: 160%;
 	background: darken($paleyellow, 30);
 	color: rgba;$darkblue: 80;
+
+#{headings()} {
+	font-family: $font-secondary;
+	font-weight: normal;
+	color: $darkgray;
+	@include text-shadow($lightgray 1px 1px); 
+}
+
+
+h1 {
+	font-size: 2.2rem;
+	color: ($darkblue, 25);
+	// margin-bottom: .4rem;
+	padding-left: 20px;
+	
+}
+
+h2 {
+	font-size: 1.5rem;
+	line-height: 100%;
+	margin: 20px 0 0 0;
+	color: $darkgray;
+}
+
+a {
+	text-decoration: underline;
+	color: mediumgray;
+	&:hover {
+		color: $orange;
+	}
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+.small {
+	font-size: 1rem;
+	color: $blue;	
+}
+
 }
 .top {
    	 background: rgba(0,0,0,.8);
    	 position: fixed;
    	 width: 100%;
-   	 margin-top: auto;
-   	 margin-bottom: auto;
+   	 top: 0px;
+   	 left:0px;
+	 margin: 0px;
+   	 padding: 10px;
+ }
+
+.about {
+	background: rgba(129,141,166,1);
+	padding-top: 10px;
+	font-size: 13px;
 }
 
-// .box {
+.footer {
+   	 background: rgba(0,0,0,.8);
+   	 color: white;
+   	 width: 100%;
+   	 top: 0px;
+   	 left:0px;
+	 margin: 0px;
+   	 padding: 10px;
+   	 float: left;
+ }
 
-// }
 
 .container{
 	max-width: 960px;
@@ -26,24 +86,72 @@ body {
 	margin-right: auto;
 }
 
+.ourwork img {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #594522;
+}
+
+.ourwork ul li{
+	float: left;
+	width: 250px;
+	min-height: 230px;
+	margin-right: 35px;
+	list-style-type: none;
+}
+
+.ourwork ul li:nth-of-type(3n) {
+	margin-right: 0;
+}
+
+
+
+//boxes------------for grids------------
+
+.box {
+	background: rgba(206,222,242,1);
+	padding: 10px 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.box p{
+	text-align: center;
+	margin-bottom: 0px;
+	line-height: 1.75em;
+}
+
+.box1 {
+	font-size: 1.5em;
+}
+
+.box h1,h2,h3 {
+	text-align: center;
+}
+
+
+
 header {
 	float: left;
-	width: 345px;
+	// width: 345px;
 }
 
 header h1{
 	color:white;
-	font-size: 3em;
+	font-size: 2em;
 }
 nav {
   float: right;
-  width: 386px;
-  margin-top: auto;
-  margin-bottom: auto;
+  // width: 386px;
+  margin-top: 0px;
+ 
 }
 nav ul li {
   display: inline-block;
   padding-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+
 }
 nav ul li a {
   text-decoration: none;
@@ -58,20 +166,5 @@ nav ul li a:visited {
 nav ul li a:hover,
 nav ul li a:active {
   color: rgba(255, 255, 255, 0.9);
-  background: #ff8562;
-  // border-radius: 15px;
+  background: $gray;
 }
-
-// #{headings()} {
-// 	font-family: $font-secondary;
-// 	font-weight: normal;
-// 	color: $darkgray;
-// 	@include text-shadow($payleryellow 1px 1px);
-// }
-
-// h1 {
-// 	font-size: 2.2rem;
-// 	color: lighten($darkblue, 25);
-// 	margin-bottom: .4rem;
-// 	border-bottom: 1px solid $lightgray;
-// }

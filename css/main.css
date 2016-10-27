@@ -489,16 +489,69 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
+  font-family: Montserrat, serif;
+  font-size: 1.2rem;
+  line-height: 160%;
   background: #bea85e;
   color: rgba;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: RobotoSlab, serif;
+  font-weight: normal;
+  color: #475B62;
+  text-shadow: #819090 1px 1px;
+}
+body h1 {
+  font-size: 2.2rem;
+  color: 80, 25;
+  padding-left: 20px;
+}
+body h2 {
+  font-size: 1.5rem;
+  line-height: 100%;
+  margin: 20px 0 0 0;
+  color: #475B62;
+}
+body a {
+  text-decoration: underline;
+  color: mediumgray;
+}
+body a:hover {
+  color: #BD3613;
+}
+body p {
+  margin-bottom: 10px;
+}
+body .small {
+  font-size: 1rem;
+  color: #2176C7;
 }
 
 .top {
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
   width: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 10px;
+}
+
+.about {
+  background: #818da6;
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 10px;
+  float: left;
 }
 
 .container {
@@ -507,26 +560,64 @@ body {
   margin-right: auto;
 }
 
+.ourwork img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #594522;
+}
+
+.ourwork ul li {
+  float: left;
+  width: 250px;
+  min-height: 230px;
+  margin-right: 35px;
+  list-style-type: none;
+}
+
+.ourwork ul li:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.box {
+  background: #cedef2;
+  padding: 10px 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.box p {
+  text-align: center;
+  margin-bottom: 0px;
+  line-height: 1.75em;
+}
+
+.box1 {
+  font-size: 1.5em;
+}
+
+.box h1, h2, h3 {
+  text-align: center;
+}
+
 header {
   float: left;
-  width: 345px;
 }
 
 header h1 {
   color: white;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 nav {
   float: right;
-  width: 386px;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 0px;
 }
 
 nav ul li {
   display: inline-block;
   padding-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 nav ul li a {
@@ -541,7 +632,7 @@ nav ul li a:visited {
 nav ul li a:hover,
 nav ul li a:active {
   color: rgba(255, 255, 255, 0.9);
-  background: #ff8562;
+  background: #708284;
 }
 
 .hidden {
